@@ -1,0 +1,20 @@
+{
+    "debugging": { "show_console": false, "subprocess_show_console": false },
+    "main_window": {
+        "title": "Lia's Laci - Kasir Toko ATK",
+        "default_size": [1200, 750],
+        "minimum_size": [900, 600],
+        "center_on_screen": true
+    },
+    "chrome": {
+        "log_severity": "disable",
+        "context_menu": { "enable_menu": false, "navigation": false, "print": false, "view_source": false, "open_in_external_browser": false, "devtools": false },
+        "external_drag": false
+    },
+    "web_server": {
+        "listen_on": ["127.0.0.1", 0],
+        "www_directory": "www",
+        "index_files": ["index.php", "index.html"],
+        "404_handler": "/index.php"
+    }
+}
