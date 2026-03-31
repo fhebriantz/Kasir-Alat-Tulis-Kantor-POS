@@ -44,6 +44,9 @@ for f in "$DIST_DIR/$APP/www/index.php" "$DIST_DIR/$APP/www/api.php" "$DIST_DIR/
 done
 echo "  [✓] Path disesuaikan"
 
+mv "$DIST_DIR/$APP/phpdesktop-chrome.exe" "$DIST_DIR/$APP/$APP.exe"
+echo "  [✓] Exe di-rename → $APP.exe"
+
 echo ""
 echo "  ══════════════════════════════════════"
 echo "  BUILD SELESAI!"
