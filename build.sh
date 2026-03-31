@@ -47,6 +47,48 @@ echo "  [✓] Path disesuaikan"
 mv "$DIST_DIR/$APP/phpdesktop-chrome.exe" "$DIST_DIR/$APP/$APP.exe"
 echo "  [✓] Exe di-rename → $APP.exe"
 
+cat > "$DIST_DIR/Cara Install.txt" << 'INSTALL'
+═══════════════════════════════════════════════════════
+  CARA INSTALL — Lia's Laci (Kasir ATK)
+═══════════════════════════════════════════════════════
+
+1. Extract file ZIP ini ke folder manapun
+   (contoh: D:\LiasLaci)
+
+2. Buka folder LiasLaci, lalu klik 2x file LiasLaci.exe
+
+3. Jika muncul pesan "Windows protected your PC"
+   atau "Windows Defender SmartScreen":
+
+   a. Klik tulisan "More info" / "Selengkapnya"
+   b. Klik tombol "Run anyway" / "Tetap jalankan"
+
+   Ini normal terjadi karena aplikasi belum memiliki
+   sertifikat digital (code signing). Aplikasi ini
+   aman digunakan.
+
+4. Jika Windows Defender / antivirus memblokir file:
+
+   a. Buka Windows Security → Virus & threat protection
+   b. Klik "Protection history"
+   c. Cari file LiasLaci.exe yang diblokir
+   d. Klik "Actions" → "Allow on device"
+
+   Atau tambahkan folder LiasLaci sebagai pengecualian:
+   a. Buka Windows Security → Virus & threat protection
+   b. Klik "Manage settings" di bawah Virus & threat
+      protection settings
+   c. Scroll ke bawah, klik "Add or remove exclusions"
+   d. Klik "Add an exclusion" → "Folder"
+   e. Pilih folder tempat LiasLaci di-extract
+
+5. Aplikasi akan terbuka otomatis di jendela browser
+   bawaan. Selamat menggunakan!
+
+═══════════════════════════════════════════════════════
+INSTALL
+echo "  [✓] Cara Install.txt dibuat di dist/"
+
 echo ""
 echo "  ══════════════════════════════════════"
 echo "  BUILD SELESAI!"
